@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="397f6a4e-edbf-4bbd-bedd-707e42112f56" name="Default Changelist" comment="" />
+    <list default="true" id="397f6a4e-edbf-4bbd-bedd-707e42112f56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/perkJson.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/plantjesJson.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/PerkViewModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/PlantViewModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/addToPerk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/receive.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/showPerkInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/tuinScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/addToPerk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/classes/Perk.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/perkView.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scr/img/dirty.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/classes/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plant.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/classes/Plant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plantPlantje.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/plantPlantje.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plantToevoegen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/plantToevoegen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plantjesJson.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plantjesLijst.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/plantjesLijst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plantjesLijst.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/plantjesLijst.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +43,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/plantjesLijst.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/javascript/plantjesLijst.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1Z5gMFS3AAhNYhdmh05xH2EWxnr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -32,9 +61,20 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\XAMPP\htdocs\simplePlantjes\php" />
+      <recent name="D:\XAMPP\htdocs\simplePlantjes\scr\img" />
+      <recent name="D:\XAMPP\htdocs\simplePlantjes" />
+      <recent name="D:\XAMPP\htdocs\simplePlantjes\javascript" />
+      <recent name="D:\XAMPP\htdocs\simplePlantjes\php\api" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -48,6 +88,9 @@
       <updated>1584134318718</updated>
       <workItem from="1584134320088" duration="9739000" />
       <workItem from="1584181569609" duration="27193000" />
+      <workItem from="1584380290385" duration="3706000" />
+      <workItem from="1584445835603" duration="4777000" />
+      <workItem from="1584476537562" duration="21108000" />
     </task>
     <servers />
   </component>
@@ -55,18 +98,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584221418465">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="624" y="206" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584537933737">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="499" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1584221418465" />
-    <state x="585" y="233" key="NewPhpClassDialog" timestamp="1584143889134">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="624" y="206" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1584537933737" />
+    <state x="731" y="291" key="NewPhpClassDialog" timestamp="1584478860152">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="233" key="NewPhpClassDialog/0.0.1536.834@0.0.1536.834" timestamp="1584143889134" />
-    <state x="604" y="342" key="NewPhpFileDialog" timestamp="1584224125452">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="731" y="291" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1584478860152" />
+    <state x="755" y="426" key="NewPhpFileDialog" timestamp="1584543708953">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="604" y="342" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1584224125452" />
+    <state x="755" y="426" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1584543708953" />
     <state x="277" y="61" key="SettingsEditor" timestamp="1584134332665">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -75,6 +121,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="465" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1584181606698" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1584538025072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1584538025072" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1584204434583">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

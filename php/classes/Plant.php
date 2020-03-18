@@ -1,5 +1,5 @@
 <?php
-require_once ('Database.php');
+require_once('Database.php');
 
 class Plant
 {
@@ -13,7 +13,7 @@ class Plant
     public $voedingsFreq;
 
     public function save(){
-        $this->id = Database::getPrimary();
+        $this->id = Database::getPrimaryPlant();
 
         $sql = "INSERT INTO `plant` (`id`,`zaad`,`naam`,`kiemDatum`,`groeitijd`,`waterFreq`,`waterBehoefte`,`voedingsFreq`) VALUES(".$this->id.",".$this->zaad.",'".$this->naam."',".$this->kiemDatum.",".$this->groeitijd.",".$this->waterFreq.",'".$this->waterBehoefte."',".$this->voedingsFreq.")";
         Database::runInsert($sql);

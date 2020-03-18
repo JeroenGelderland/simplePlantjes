@@ -1,6 +1,6 @@
 <?php
-require_once ('plantToevoegen.php');
-require_once ('Plant.php');
+require_once('plantToevoegen.php');
+require_once('./classes/Plant.php');
 
 
 const SEED_AGE = 0;

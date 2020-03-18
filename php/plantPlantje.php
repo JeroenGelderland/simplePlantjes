@@ -1,5 +1,5 @@
 <?php
-include_once('Database.php');
+include_once('classes/Database.php');
 
     $plantId = $_POST["id"];
     $time = strtotime("now");

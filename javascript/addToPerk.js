@@ -57,9 +57,11 @@ document.querySelector('.btn-success').addEventListener('click', () => {
     if(plantAction.perk != null){
         const json_string = JSON.stringify(plantAction);
         const request = new XMLHttpRequest();
-        request.open("POST", "plantActionToDatabase.php");
+        request.open("POST", "addToPerk.php");
         request.setRequestHeader("Content-Type", "application/json");
         request.send(json_string)
+        window.location = "../php/plantjesLijst.php"
+
     }
 
 })

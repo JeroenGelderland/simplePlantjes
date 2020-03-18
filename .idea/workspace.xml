@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="397f6a4e-edbf-4bbd-bedd-707e42112f56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/plantActionToDatabase.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/addToPerk.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/addToPerk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/plantjesLijst.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/plantjesLijst.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/receive.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/php/addToPerk.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/addToPerk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/classes/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/classes/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/classes/Plant.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/classes/Plant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/plantActionToDatabase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/plantPlantje.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/plantPlantje.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/plantToevoegen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/plantToevoegen.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/javascript/plantjesLijst.js" root0="SKIP_INSPECTION" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1Z5gMFS3AAhNYhdmh05xH2EWxnr" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Projects/ProjectAgile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
@@ -75,6 +78,7 @@
       <workItem from="1584380290385" duration="3706000" />
       <workItem from="1584445835603" duration="4777000" />
       <workItem from="1584476537562" duration="23606000" />
+      <workItem from="1584566299164" duration="2938000" />
     </task>
     <servers />
   </component>

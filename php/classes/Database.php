@@ -28,13 +28,13 @@ final class Database{
     }
 
     public static function runInsert($sql){
+
         $conn = new mysqli(HOST, USERNAME , PASSWORD, DB_NAME);
         if ($conn->connect_error) {
             echo "connection failed";
             die("Connection failed: " . $conn->connect_error);
         }
-
-        $result = $conn->query($sql);
+        $conn->query($sql);
         $conn->close();
     }
 
@@ -61,8 +61,7 @@ final class Database{
                 $plantje->id = $row["id"];
                 $plantje->zaad = $row["zaad"];
                 $plantje->naam = $row["naam"];
-                $plantje->kiemDatum = $row["kiemDatum"];
-                $plantje->groeitijd = $row["groeitijd"];
+                $plantje->plantDatum = $row["plantDatum"];
                 $plantje->waterFreq = $row["waterFreq"];
                 $plantje->waterBehoefte = $row["waterBehoefte"];
                 $plantje->voedingsFreq = $row["voedingsFreq"];
@@ -126,8 +125,7 @@ final class Database{
                 $plantje->id = $row["id"];
                 $plantje->zaad = $row["zaad"];
                 $plantje->naam = $row["naam"];
-                $plantje->kiemDatum = $row["kiemDatum"];
-                $plantje->groeitijd = $row["groeitijd"];
+                $plantje->plantDatum = $row["plantDatum"];
                 $plantje->waterFreq = $row["waterFreq"];
                 $plantje->waterBehoefte = $row["waterBehoefte"];
                 $plantje->voedingsFreq = $row["voedingsFreq"];

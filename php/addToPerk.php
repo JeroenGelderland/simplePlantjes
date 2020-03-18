@@ -1,4 +1,22 @@
-<?php ?>
+<?php
+include_once('classes/Database.php');
+
+$str_json = file_get_contents("php://input");
+$plantAction = json_decode($str_json);
+echo $str_json;
+
+if(isset($plantAction)){
+    foreach ($plantAction->toPlant as $plant){
+        $sql = sprintf("UPDATE `plant` SET `perk` = %u WHERE id=%u;", (int)$plantAction->perk, (int)$plant);
+        echo $sql;
+        Database::runInsert($sql);
+    }
+}
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

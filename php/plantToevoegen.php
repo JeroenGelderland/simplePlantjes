@@ -10,11 +10,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     if(isset($_POST["zaad"])){
         $plant->zaad = "true";
-        $plant->kiemDatum = 0;
+        $plant->plantDatum = 0;
     }
     else{
         $plant->zaad = "false";
-        $plant->kiemDatum = strtotime((string)($_POST["leeftijd"]*-1). " week");
+        $plant->plantDatum = strtotime((string)($_POST["leeftijd"]*-1). " week");
     }
     $plant->naam = $_POST["naam"];
     $plant->groeitijd = $_POST["groeitijd"];

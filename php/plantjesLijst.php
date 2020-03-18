@@ -1,7 +1,6 @@
 <?php
 include_once('./classes/Database.php');
 include_once('./classes/Plant.php');
-$plantjes = Database::loadPlantjes();
 ?>
 <!DOCTYPE html>
 <html lang="en">

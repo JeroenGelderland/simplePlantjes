@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="397f6a4e-edbf-4bbd-bedd-707e42112f56" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/addToPerk.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/addToPerk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/addToPerk.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/addToPerk.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/classes/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/classes/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/classes/Plant.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/classes/Plant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/plantActionToDatabase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/plantPlantje.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/plantPlantje.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/plantToevoegen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/plantToevoegen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/plantjesLijst.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/plantjesLijst.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +73,7 @@
       <workItem from="1584380290385" duration="3706000" />
       <workItem from="1584445835603" duration="4777000" />
       <workItem from="1584476537562" duration="23606000" />
-      <workItem from="1584566299164" duration="2938000" />
+      <workItem from="1584566299164" duration="3988000" />
     </task>
     <servers />
   </component>

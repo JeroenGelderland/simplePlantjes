@@ -57,16 +57,22 @@ final class Database{
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                $plantje = new Plant();
-                $plantje->id = $row["id"];
-                $plantje->zaad = $row["zaad"];
-                $plantje->naam = $row["naam"];
-                $plantje->plantDatum = $row["plantDatum"];
-                $plantje->waterFreq = $row["waterFreq"];
-                $plantje->waterBehoefte = $row["waterBehoefte"];
-                $plantje->voedingsFreq = $row["voedingsFreq"];
+                array_push($plantjes, self::createPlantje($row));
+            }
+        }
+        return $plantjes;
+    }
 
-                array_push($plantjes, $plantje);
+    public static function loadPlantjePlantjes(){
+        $plantjes = [];
+
+        $sql = "SELECT * FROM `plant` WHERE `perk` IS NULL;";
+
+        $result = self::runQuery($sql);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                array_push($plantjes, self::createPlantje($row));
             }
         }
         return $plantjes;
@@ -82,7 +88,7 @@ final class Database{
     }
 
     public static function getJsonPlantjes(){
-        echo json_encode(self::loadPlantjes());
+        echo json_encode(self::loadPlantjePlantjes());
     }
 
     public static function loadPerks(){
@@ -105,7 +111,7 @@ final class Database{
                 $perk->startY = $row['startY'];
                 $perk->endX = $row['endX'];
                 $perk->endY = $row['endY'];
-//                $perk->plantjes = self::loadPerkPlants($perk->id);
+                $perk->plantjes = self::loadPerkPlants($perk->id);
 
                 array_push($perks, $perk);
             }
@@ -116,21 +122,12 @@ final class Database{
 
     public static function loadPerkPlants($perkId){
         $plantjes = [];
-        $sql = printf("SELECT * FROM `perk` WHERE id = %u;", $perkId);
+        $sql = sprintf("SELECT * FROM `plant` WHERE `perk` = %u;", $perkId);
         $result = Database::runQuery($sql);
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                $plantje = new Plant();
-                $plantje->id = $row["id"];
-                $plantje->zaad = $row["zaad"];
-                $plantje->naam = $row["naam"];
-                $plantje->plantDatum = $row["plantDatum"];
-                $plantje->waterFreq = $row["waterFreq"];
-                $plantje->waterBehoefte = $row["waterBehoefte"];
-                $plantje->voedingsFreq = $row["voedingsFreq"];
-
-                array_push($plantjes, $plantje);
+                array_push($plantjes, self::createPlantje($row));
             }
         }
 
@@ -139,6 +136,18 @@ final class Database{
 
     public static function getJsonPerk(){
         echo json_encode(self::loadPerks());
+    }
+
+    public static function createPlantje($row){
+        $plantje = new Plant();
+        $plantje->id = $row["id"];
+        $plantje->zaad = $row["zaad"];
+        $plantje->naam = $row["naam"];
+        $plantje->plantDatum = $row["plantDatum"];
+        $plantje->waterFreq = $row["waterFreq"];
+        $plantje->waterBehoefte = $row["waterBehoefte"];
+        $plantje->voedingsFreq = $row["voedingsFreq"];
+        return $plantje;
     }
 
 }

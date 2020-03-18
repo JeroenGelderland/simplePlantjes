@@ -36,7 +36,7 @@ document.querySelector('#planten').addEventListener('click', () => {
     })
 
     localStorage.setItem("omTePlanten", JSON.stringify(json))
-    window.location = "../php/addToPerk.php"
+    window.location = "addToPerk.php"
 
 })
 

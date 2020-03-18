@@ -1,16 +1,4 @@
-<?php
-
-//$str_json = file_get_contents("php://input");
-//$plantAction = json_decode($str_json);
-//var_dump($str_json);
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-    $plantIds = $_POST["plants"];
-    $perkId = $_POST["perk"];
-    header("Location: plantjesLijst.php");
-}
-?>
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
 <div class="jumbotron text-center flex-center" >
 
-    <button type="button" class="btn btn-info"><a href="../php/plantjesLijst.php">terug</a></button>
+    <button type="button" class="btn btn-info"><a href="plantjesLijst.php">terug</a></button>
     <h1 style="flex: 1">plant in perk</h1>
 </div>
 

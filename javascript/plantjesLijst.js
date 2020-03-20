@@ -9,6 +9,9 @@ fetch("../api/plantjesJson.php")
         data.forEach(plant => {
             plantjes.push(new PlantViewModel(plant))
         })
+        if (plantjes.length < 1){
+            document.querySelector('#planten').style.display = "none";
+        }
     })
 
 
@@ -30,14 +33,16 @@ document.querySelector('#zaaien').addEventListener('click', () => {
 })
 
 document.querySelector('#planten').addEventListener('click', () => {
-    let json = {"plantjes" : []}
-    plantjes.forEach(p => {
-        json.plantjes.push(p.json)
-    })
-
-    localStorage.setItem("omTePlanten", JSON.stringify(json))
-    window.location = "addToPerk.php"
-
+        let json = {"plantjes": []}
+        plantjes.forEach(p => {
+            if (!p.seed) {
+                json.plantjes.push(p.json)
+            }
+        })
+        if (json.plantjes.length > 0){
+        localStorage.setItem("omTePlanten", JSON.stringify(json))
+        window.location = "addToPerk.php"
+        }
 })
 
 document.querySelector('#annuleren').addEventListener('click', () => {

@@ -41,7 +41,6 @@ include_once('./classes/Plant.php');
         </form>
         <button type="button" class="btn btn-danger" id="annuleren" style="flex: 1">annuleren</button>
         <button type="button" class="btn btn-success" id="zaaien" style="flex: 1">zaaien</button>
-        <button type="button" class="btn btn-warning" id="planten" style="flex: 1">planten</button>
     </div>
 </div>
 
@@ -50,6 +49,8 @@ include_once('./classes/Plant.php');
     <a href="plantToevoegen.php">
         <button type="button" class="btn btn-primary">Plantje toevoegen</button>
     </a>
+    <button type="button" class="btn btn-success" id="planten" style="flex: 1">planten</button>
+
 </div>
 </body>
 </html>

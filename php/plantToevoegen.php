@@ -1,5 +1,4 @@
 <?php
-require_once('plantToevoegen.php');
 require_once('./classes/Plant.php');
 
 
@@ -23,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $plant->voedingsFreq = $_POST["voedingsFreq"];
 
     $plant->save();
-    header("Location: plantjesLijst.php");
+    header("Location: ./plantjesLijst.php");
 }
 ?>
 

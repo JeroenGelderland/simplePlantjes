@@ -33,6 +33,9 @@ include_once('./classes/Database.php')
         <a href="createPerk.php">
             <button type="button" class="btn btn-primary">Perk toevoegen</button>
         </a>
+
+<!--        <button type="button" class="btn btn-warning">Perk aanpassen</button>-->
+
     </div>
 </div>
 </body>

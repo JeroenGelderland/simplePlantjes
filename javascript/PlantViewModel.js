@@ -22,22 +22,20 @@ class PlantViewModel {
         if(this.seed){
             plantItem.innerHTML = "<p style='flex: 1'>"+this.naam+"</p><button id='plant-"+this.json.id+"' class='btn btn-success'>zaaien</button>"
             document.querySelector("#zaadjes").appendChild(plantItem)
+
+            document.querySelector('#plant-'+this.json.id).addEventListener('click', () => {
+
+                document.querySelector('#zaaien').style.display = "inline"
+                let pop = document.querySelector(".pop")
+                PlantViewModel.selected = this;
+                pop.style.display = "block";
+            })
         }
         else{
-            plantItem.innerHTML = "<p style='flex: 1'>"+this.naam+"</p><button id='plant-"+this.json.id+"' class='btn btn-success'>planten</button>"
+            plantItem.innerHTML = "<p style='flex: 1'>"+this.naam+"</p>"
             document.querySelector("#plantjes").appendChild(plantItem)
         }
 
-        document.querySelector('#plant-'+this.json.id).addEventListener('click', () => {
-            if(!this.seed){
-                document.querySelector('#zaaien').style.display = "none"
-            }
-            else{
-                document.querySelector('#zaaien').style.display = "inline"
-            }
-            let pop = document.querySelector(".pop")
-            PlantViewModel.selected = this;
-            pop.style.display = "block";
-        })
+
     }
 }

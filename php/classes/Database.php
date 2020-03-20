@@ -3,10 +3,10 @@ include_once("Plant.php");
 include_once('Perk.php');
 
 
-const USERNAME = "root";
-const HOST = "localhost";
-const PASSWORD = "";
-const DB_NAME = "plantenSimple";
+const USERNAME = "cocreagency_nl_plantjes";
+const HOST = "cocreagency.nl";
+const PASSWORD = "2apLGYWzmA7RShmZ";
+const DB_NAME = "cocreagency_nl_plantjes";
 
 const LAST_ID_QUERY = "SELECT LAST_INSERT_ID()";
 
